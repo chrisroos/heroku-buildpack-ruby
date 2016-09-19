@@ -162,6 +162,7 @@ private ##################################
   end
 
   def add_to_export(string)
+p '*** add_to_export'
     export = File.join(ROOT_DIR, "export")
     File.open(export, "a") do |file|
       file.puts string
