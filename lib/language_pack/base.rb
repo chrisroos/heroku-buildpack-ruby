@@ -164,7 +164,8 @@ private ##################################
   def add_to_export(string)
 p '*** add_to_export'
     export = File.join(ROOT_DIR, "export")
-p "*** export = #{export.inspect}"
+p "*** export file = #{export.inspect}"
+p "*** export string = #{string.inspect}"
     File.open(export, "a") do |file|
       file.puts string
     end
